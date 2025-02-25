@@ -1,0 +1,67 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2758
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>Jamie Vardy Fan Page</title>\
+    <style>\
+        body \{\
+            font-family: Arial, sans-serif;\
+            text-align: center;\
+            background: url('https://upload.wikimedia.org/wikipedia/commons/9/9f/Jamie_Vardy_2018.png');\
+            background-size: cover;\
+            background-repeat: repeat;\
+            color: white;\
+            padding: 50px;\
+        \}\
+        .container \{\
+            background: rgba(0, 0, 0, 0.7);\
+            padding: 20px;\
+            border-radius: 10px;\
+            display: inline-block;\
+        \}\
+        .button \{\
+            background: #007bff;\
+            color: white;\
+            padding: 15px 20px;\
+            border: none;\
+            border-radius: 5px;\
+            cursor: pointer;\
+            font-size: 18px;\
+            margin-top: 20px;\
+        \}\
+        .button:hover \{\
+            background: #0056b3;\
+        \}\
+    </style>\
+</head>\
+<body>\
+    <div class="container">\
+        <h1>Welcome to the Jamie Vardy Shrine! \uc0\u9917 </h1>\
+        <p>"Chat \uc0\u55357 \u56492  sh*t, get banged!" - Jamie Vardy</p>\
+        <button class="button" onclick="vardyFact()">Click for a Vardy Fact!</button>\
+        <p id="fact"></p>\
+    </div>\
+\
+    <script>\
+        function vardyFact() \{\
+            const facts = [\
+                "Jamie Vardy started his professional career at 23, proving it's never too late!",\
+                "In 2015-16, Vardy scored in 11 consecutive Premier League games, setting a record!",\
+                "He once drank Skittles vodka before matches\'97what a legend!",\
+                "Vardy helped Leicester City win the Premier League in 2016, defying 5000-1 odds!"\
+            ];\
+            const randomFact = facts[Math.floor(Math.random() * facts.length)];\
+            document.getElementById("fact").innerText = randomFact;\
+        \}\
+    </script>\
+</body>\
+</html>\
+}
